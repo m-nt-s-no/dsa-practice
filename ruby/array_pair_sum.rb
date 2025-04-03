@@ -5,7 +5,7 @@ def two_sum(array, sum)
     array.each_with_index do |num, idx|
       array[idx+1..-1].each do |other_num|
           if num + other_num == sum
-              output_array.push([num, other_num])
+              output_array.push([num, other_num]) #sort in place
           end
       end
     end
@@ -20,7 +20,7 @@ def two_sum_w_hash(array, sum)
   output_array = []
   array.each do |num|
     if number_hash.has_key?(sum - num)
-      output_array.push([num, sum - num])
+      output_array.push([num, sum - num].sort!)
     else
       number_hash[num] = "" #dummy value, not needed for algorithm
     end

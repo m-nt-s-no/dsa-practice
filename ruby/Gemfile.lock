@@ -8,6 +8,7 @@ GEM
     irb (1.13.2)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
+    minitest (5.25.5)
     psych (5.1.2)
       stringio
     rdoc (6.7.0)
@@ -18,9 +19,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   debug
+  minitest
 
 BUNDLED WITH
    2.4.6
