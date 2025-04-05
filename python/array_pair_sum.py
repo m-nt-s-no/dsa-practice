@@ -2,7 +2,7 @@ def two_sum(arr, sum):
     output = []
     for num, idx in enumerate(arr):
         rest_of_array = arr[idx+1:]
-        for other_num in arr[idx+1:]:
+        for other_num in rest_of_array:
             if num + other_num in rest_of_array:
                 output.append([num, other_num])
 
